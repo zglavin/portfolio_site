@@ -78,18 +78,20 @@
 	<h4>
 		Power Supply and Sensors
 	</h4>
-	<figure>
-		<img src="images/pcb_r2_live.jpg" style="width: 150px; height: 200px">
-		<figcaption>
-			Power supply and sensors PCB
-		</figcaption>
-	</figure>
+	
 	<p>
 	The power supply consists of a center-tapped transformer, and 2 diodes to rectify the incoming voltage. A 1 MHz ST buck converter IC steps down the input voltage into a 3.3V supply which is distributed to the rest of the blocks. 
 	</p>
 	<p>
 	The sensor block is designed to output signals for voltage and current. The hall-effect IC requires the full current to pass through itself, and so the PCB design must withstand 15A max and 12A continuous current. The voltage sensor uses a high-ohm voltage divider, and a coupling capacitor to isolate the mains from the MCU. 
 	</p>
+	
+	<figure>
+		<img src="images/pcb_r2_live.jpg" style="width: 150px; height: 200px">
+		<figcaption>
+			Power supply and sensors PCB
+		</figcaption>
+	</figure>
 	
 	<h4>
 		Alarm and User IO
@@ -102,6 +104,9 @@
 		</figcaption>
 	</figure>
 	
+	<h4>
+		Microcontroller
+	</h4>
 	<figure>
 		<img src="images/mcu_sine.jpg" style="width: 250px; height: 200px">
 		<figcaption>
@@ -189,89 +194,89 @@
 		</table>
 	</figure>
 	
-	<!-- 
 	<h3>
 	System Business Requirements
 	</h3>
 	
-	<table>
-		<tr>
-			<th>Description</th>
-			<th>Requirement</th>
-			<th>Notes</th>
-		<tr>
+	<figure>
+		<table>
+			<tr>
+				<th>Description</th>
+				<th>Requirement</th>
+				<th>Notes</th>
+			<tr>
+			
+			<tr>
+				<td>Intended Market Geography</td>
+				<td>North America</td>
+				<td></td>
+			
+			</tr>
+			
+			<tr>
+				<td>Intended Market Demography</td>
+				<td>16+</td>
+				<td>Technical users</td>
+			
+			</tr>
+			
+			<tr>
+				<td>AVG List Sales Price</td>
+				<td>$50</td>
+				<td></td>
+			
+			</tr>
+			
+			<tr>
+				<td>Estimated Annual Volume</td>
+				<td>6000 units</td>
+				<td></td>
+			
+			</tr>
+			
+			<tr>
+			
+				<td>Max Material Cost</td>
+				<td>$15</td>
+				<td></td>
+			
+			</tr>
+			
+			<tr>
+			
+				<td>Max Assembly and Test Cost</td>
+				<td>$10</td>
+				<td></td>
+			
+			</tr>
+			
+			<tr>
+			
+				<td>Reliablility Life Target</td>
+				<td>20 years</td>
+				<td></td>
+			
+			</tr>
+			
+			<tr>
+			
+				<td>Target Warranty Length</td>
+				<td>5 years</td>
+				<td></td>
+			
+			</tr>
+			
+			<tr>
+			
+				<td>Min Life Cycle Period</td>
+				<td>10 years</td>
+				<td></td>
+			
+			</tr>
+			
 		
-		<tr>
-			<td>Intended Market Geography</td>
-			<td>North America</td>
-			<td></td>
-		
-		</tr>
-		
-		<tr>
-			<td>Intended Market Demography</td>
-			<td>16+</td>
-			<td>Technical users</td>
-		
-		</tr>
-		
-		<tr>
-			<td>AVG List Sales Price</td>
-			<td>$50</td>
-			<td></td>
-		
-		</tr>
-		
-		<tr>
-			<td>Estimated Annual Volume</td>
-			<td>6000 units</td>
-			<td></td>
-		
-		</tr>
-		
-		<tr>
-		
-			<td>Max Material Cost</td>
-			<td>$15</td>
-			<td></td>
-		
-		</tr>
-		
-		<tr>
-		
-			<td>Max Assembly and Test Cost</td>
-			<td>$10</td>
-			<td></td>
-		
-		</tr>
-		
-		<tr>
-		
-			<td>Reliablility Life Target</td>
-			<td>20 years</td>
-			<td></td>
-		
-		</tr>
-		
-		<tr>
-		
-			<td>Target Warranty Length</td>
-			<td>5 years</td>
-			<td></td>
-		
-		</tr>
-		
-		<tr>
-		
-			<td>Min Life Cycle Period</td>
-			<td>10 years</td>
-			<td></td>
-		
-		</tr>
-		
-	
-	</table>
-	 -->
+		</table>
+	</figure>
 	 
 	<h3>
 		Initial Design (Version 1)
