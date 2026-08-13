@@ -317,6 +317,12 @@
 		Circuit Design
 	</h4>
 	
+	<!-- Schematics -->
+	<figure>
+		<a href="files/pwr_sensor_capstone_schematic.pdf"><img src="images/pwr_schematic_ss.jpg" style="width: 700px; height: 250px"></a>
+		<figcaption>Power Supply Schematic (Click image for pdf file)</figcaption>
+	</figure>
+	
 	<!--BOM Table-->
 	<figure>
 		<table>
@@ -388,15 +394,11 @@
 		</figcaption>
 	</figure>
 	
-	<!-- Schematics -->
-	<figure>
-		
-	</figure>
 	<p>
 		A constraint which was set by the instructor was that no AC to DC converters were to be used. This was due to a history of issues former teams had experienced when implimenting AC/DC converters into their projects. This increased the size of the transformer needed, and will be reconsidered in future itterations to save space and cost. 
 	</p>
 	<p>
-		The power supply consists of a step-down, center-tapped transformer and a diode pair. This and C<sub>in</sub> rectify the 120 V<sub>AC</sub> into 15 V<sub>DC</sub>. 
+		The power supply consists of a step-down, center-tapped transformer and a diode pair. This and C<sub>in</sub> rectify the 120 V<sub>AC</sub> into 15 V<sub>DC</sub>. This is further stepped down to 3.3 V<sub>DC</sub> by a buck switching regulator.
 	
 	<p>
 		After meeting the nessesary requirements of output voltage and current, a number of other factors determined our choice of the ST-DCP3601 buck converter. The cost at scale from Digikey.com of $0.38 per unit, combined with the thorough documentation from ST, made this our top choice. The 1 A output and wide range of input/output voltages provided the oportunity for reusing this piece for possible higher power designs.
@@ -406,9 +408,21 @@
 		PCB Version 1
 	</h4>
 	
+	<figure>
+		
+		<img src="images/pwr_pcb_v1_front.jpg" style="width: 450px; height: 330px">
+		<img src="images/pwr_pcb_v1_back.jpg" style="width: 450px; height: 330px">
+		<figcaption>Power and Sensor PCB Design Version 1 (KiCad Render)</figcaption>
+	</figure>
 	<h4>
 		PCB V2
 	</h4>
+	
+	<figure>
+		<img src="images/pwr_pcb_v2_front.jpg" style="width: 450px; height: 250px">
+		<img src="images/pwr_pcb_v2_back.jpg" style="width: 450px; height: 250px">
+		<figcaption>Power and Sensor PCB Design Version 2 (KiCad Render)</figcaption>
+	</figure>	
 	
 	<h4>
 		Further Notes on the Project
