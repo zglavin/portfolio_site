@@ -19,7 +19,7 @@
 		The University of Wisconsin - Milwaukee
 	</h2>
 	<p>
-		Updated 7/20/2026 by Zachary Glavin
+		Updated 8/13/2026 by Zachary Glavin
 	</p>
 	
 	<u><i>
@@ -320,18 +320,86 @@
 	<!--BOM Table-->
 	<figure>
 		<table>
-			
+			<tr>
+				<th>Name</th>
+				<th>Mfg Part Number</th>
+				<th>Schematic Reference</th>
+				<th>Size / Package</th>
+				<th>Qty</th>
+				<th>Description</th>
+			</tr>
+			<!--Buck-->
+			<tr>
+				<td>Buck Converter</td> <!--Name -->
+				<td>ST 3601CMR</td> <!--mfg part -->
+				<td>U1</td> <!--schem ref -->
+				<td>SMT 23-6</td> <!--pkg -->
+				<td>1</td> <!--qty -->
+				<td>ST step-down DC-DC converter</td> <!--Description -->
+			</tr>
+			<!--Power Transform-->
+			<tr>
+				<td>Power Transformer</td> <!--Name -->
+				<td>BV301D06020</td> <!--mfg part -->
+				<td>J1</td> <!--schem ref -->
+				<td>Non-standard</td> <!--pkg -->
+				<td>1</td> <!--qty -->
+				<td>Single primary, dual secondary</td> <!--Description -->
+			</tr>
+			<!--Diode pair-->
+			<tr>
+				<td>Diode Pair</td> <!--Name -->
+				<td></td> <!--mfg part -->
+				<td></td> <!--schem ref -->
+				<td></td> <!--pkg -->
+				<td>1</td> <!--qty -->
+				<td></td> <!--Description -->
+			</tr>
+			<!--C_in-->
+			<tr>
+				<td>Input Capacitor</td> <!--Name -->
+				<td></td> <!--mfg part -->
+				<td></td> <!--schem ref -->
+				<td></td> <!--pkg -->
+				<td>1</td> <!--qty -->
+				<td></td> <!--Description -->
+			</tr>
+			<!--C_out-->
+			<tr>
+				<td>Output Capacitor</td> <!--Name -->
+				<td></td> <!--mfg part -->
+				<td></td> <!--schem ref -->
+				<td></td> <!--pkg -->
+				<td>1</td> <!--qty -->
+				<td></td> <!--Description -->
+			</tr>
+			<!--L_out-->
+			<tr>
+				<td>Inductor</td> <!--Name -->
+				<td></td> <!--mfg part -->
+				<td></td> <!--schem ref -->
+				<td></td> <!--pkg -->
+				<td>1</td> <!--qty -->
+				<td></td> <!--Description -->
+			</tr>
 		</table>
+		<figcaption>
+			Power Supply Bill of Materials
+		</figcaption>
 	</figure>
 	
 	<!-- Schematics -->
 	<figure>
-	
-	
+		
 	</figure>
+	<p>
+		A constraint which was set by the instructor was that no AC to DC converters were to be used. This was due to a history of issues former teams had experienced when implimenting AC/DC converters into their projects. This increased the size of the transformer needed, and will be reconsidered in future itterations to save space and cost. 
+	</p>
+	<p>
+		The power supply consists of a step-down, center-tapped transformer and a diode pair. This and C<sub>in</sub> rectify the 120 V<sub>AC</sub> into 15 V<sub>DC</sub>. 
 	
 	<p>
-		After meeting the nessesary requirements of output voltage and current, the decision to use the ST-DCP3601 was primarily based on per unit cost. 
+		After meeting the nessesary requirements of output voltage and current, a number of other factors determined our choice of the ST-DCP3601 buck converter. The cost at scale from Digikey.com of $0.38 per unit, combined with the thorough documentation from ST, made this our top choice. The 1 A output and wide range of input/output voltages provided the oportunity for reusing this piece for possible higher power designs.
 	</p>
 	
 	<h4>
