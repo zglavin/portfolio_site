@@ -27,7 +27,7 @@
 		Documentation of this project is still in the works. Please check back soon for more updates. 
 	</p>
 	<p>
-		Due to the design of the power supply, and the power/sensors PCB design being my (Zachary Glavin's) responsibility, this webpage will focus mostly on those aspects of the project, with additional information provided as time allows. 
+		Due to the design of the power supply, and the power/sensors PCB design being my (Zachary Glavin's) responsibility, this web-page will focus mostly on those aspects of the project, with additional information provided as time allows. 
 	</p>
 	
 	</i></u>
@@ -41,9 +41,9 @@
 	and prototype a product. 
 	</p>
 	<p>
-	Our team chose to build a power meter. We chose to design this product because of it's utility in todays market. 
-	Rising utility prices are on the top of everyone's mind, and energy concious consumers demand tools to monitor 
-	the perfomance of thier appliances. This product enables consumers to make decisions about what products they decide 
+	Our team chose to build a power meter. We chose to design this product because of it's utility in today's market. 
+	Rising utility prices are on the top of everyone's mind, and energy conscious consumers demand tools to monitor 
+	the performance of their appliances. This product enables consumers to make decisions about what products they decide 
 	to keep plugged into their walls. 
 	</p>
 	<p>
@@ -75,12 +75,12 @@
 		Theory of Operation
 	</h3>
 	<p>
-		The power meter is a device that perfoms electrical measurements on household appliances. 
+		The power meter is a device that performs electrical measurements on household appliances. 
 		The power meter is plugged into a household electrical outlet, and the appliance is then 
 		plugged into the power meter. The appliance current passes through the power meter, and 
 		the wall voltage is measured. An onboard microcontroller stores this data, and calculates 
 		power, energy, and power factor, and displays this information on a monitor for the consumer. 
-		Buttons allow the user to navigate menus, set threshholds for the alarm, and export data. 
+		Buttons allow the user to navigate menus, set thresholds for the alarm, and export data. 
 		The alarm consists of an LED and buzzer, providing audible and visual feedback to the user. 
 		This device is similar to the 
 		<a href="https://shop.p3international.com/products/kill-a-watt">Kill-A-Watt</a> 
@@ -270,7 +270,7 @@
 			
 			<tr>
 			
-				<td>Reliablility Life Target</td>
+				<td>Reliability Life Target</td>
 				<td>20 years</td>
 				<td></td>
 			
@@ -413,13 +413,13 @@
 	</figure>
 	
 	<p>
-		A constraint which was set by the instructor was that no AC to DC converters were to be used. This was due to a history of issues former teams had experienced when implimenting AC/DC converters into their projects. This increased the size of the transformer needed, and will be reconsidered in future itterations to save space and cost. 
+		A constraint which was set by the instructor was that no AC to DC converters were to be used. This was due to a history of issues former teams had experienced when implementing AC/DC converters into their projects. This increased the size of the transformer needed, and will be reconsidered in future iterations to save space and cost. 
 	</p>
 	<p>
 		The power supply consists of a step-down, center-tapped transformer and a diode pair. This and C<sub>in</sub> rectify the 120 V<sub>AC</sub> into 15 V<sub>DC</sub>. This is further stepped down to 3.3 V<sub>DC</sub> by a buck switching regulator.
 	
 	<p>
-		After meeting the nessesary requirements of output voltage and current, a number of other factors determined our choice of the ST-DCP3601 buck converter. The cost at scale from Digikey.com of $0.38 per unit, combined with the thorough documentation from ST, made this our top choice. The 1 A output and wide range of input/output voltages provided the oportunity for reusing this piece for possible higher power designs.
+		After meeting the necessary requirements of output voltage and current, a number of other factors determined our choice of the ST-DCP3601 buck converter. The cost at scale from Digikey.com of $0.38 per unit, combined with the thorough documentation from ST, made this our top choice. The 1 A output and wide range of input/output voltages provided the opportunity for reusing this piece for possible higher power designs.
 	</p>
 	
 	<h4>
